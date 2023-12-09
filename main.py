@@ -21,7 +21,6 @@ class MyGUI(QMainWindow):
         self.pushButton_next.clicked.connect(self.next_image)
         self.pushButton_previous.clicked.connect(self.previous_image)
         
-
     def resizeEvent(self, event):
         try: # to avoid error when calling resizeEvent() before init() in which current_file is defined
             pixmap = QtGui.QPixmap(self.current_file)
